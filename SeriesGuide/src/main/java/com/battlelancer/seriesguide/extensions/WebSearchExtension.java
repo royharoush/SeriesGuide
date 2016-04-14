@@ -41,7 +41,7 @@ public class WebSearchExtension extends SeriesGuideExtension {
 
         publishAction(new Action.Builder(getString(R.string.web_search), episodeIdentifier)
                 .viewIntent(ServiceUtils.buildWebSearchIntent(
-                        episode.getShowTitle() + " " + episode.getTitle()))
+                        episode.getShowTitle() + episode.getTitle() + " " +  "site:site:1337x.to" ))
                 .build());
     }
 }
